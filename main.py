@@ -12,7 +12,7 @@ from ghrepo import find_token_expiration, get_org_repos
 GH_PAT = os.environ.get("GH_PAT")
 
 # find out if the token is valid
-#PAT_MSG = None
+PAT_MSG = None
 #if GH_PAT:
 #    expiration = find_token_expiration(GH_PAT)
 #    if expiration.seconds < 0:
