@@ -8,9 +8,8 @@
 We tried to make the setup as simple as possible:
 
 1. Fork the repo.
-2. [Create a personal access token (PAT)](https://github.com/settings/tokens?type=beta) and add it to the repository's secrets with the name `SODA_DASH_PAT`. The token only needs access to public repositories.
-3. Edit the configuration in [config.toml](./config.toml).
-4. Set up GitHub pages.
+2. Edit the configuration in [config.toml](./config.toml).
+4. Set up GitHub pages to deploy from GitHub Actions.
 5. Activate the GitHub action.
 
 ## Contributing & License
@@ -20,9 +19,9 @@ This project was made by the [ODISSEI SoDa team](https://github.com/sodascience)
 Feel free to edit, remix, and make your own, but please acknowledge both the SoDa team and the UU CDH!
 
 ## Contact
-This is a project by the [ODISSEI Social Data Science (SoDa)](https://odissei-data.nl/nl/soda/) team.
+This is a project by the [ODISSEI Social Data Science (SoDa)](https://odissei-data.nl/nl/soda/) team with modifications by [CCT Data Science](https://datascience.cct.arizona.edu/).
 Do you have questions, suggestions, or remarks on the technical implementation? File an issue in the
 issue tracker or feel free to contact [Erik-Jan van Kesteren](https://github.com/vankesteren).
 
-<img src="public/img/logo.png" alt="SoDa logo" width="250px"/> 
+<img src="public/img/logo.png" alt="CCT Data Science logo" width="250px"/> 
 
