@@ -11,9 +11,6 @@ from ghrepo import get_org_repos
 # First, load the github PAT
 GH_PAT = os.environ.get("GH_PAT")
 
-# find out if the token is valid
-PAT_MSG = None
-
 # First, load the configuration file
 with Path("config.toml").open("r", encoding="UTF-8") as f:
     config = toml.load(f)
@@ -29,7 +26,6 @@ var_dict = {
     "metrics": config["metrics"],
     "repos": repos,
     "page": config["page"],
-    #"patmsg": PAT_MSG,
 }
 
 out = template.render(var_dict)

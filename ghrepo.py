@@ -177,11 +177,3 @@ async def get_org_repos(org: str, token: str | None = None) -> list[GitHubRepo]:
             else:
                 response.raise_for_status()
     return repos
-
-
-def find_token_expiration(token: str):
-    """Return the time left on the GH personal access token."""
-    res = httpx.get("https://api.github.com/", headers={"Authorization": f"Bearer {token}"})
-    res.raise_for_status()
-    expiry = datetime.fromisoformat(res.headers["GitHub-Authentication-Token-Expiration"])
-    return expiry - datetime.now(tz=expiry.tzinfo)
