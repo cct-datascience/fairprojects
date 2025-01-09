@@ -34,7 +34,7 @@ jobs:
           poetry install -n --all-extras
       - name: Build
         env:
-          GH_PAT: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: poetry run python main.py
       - name: Setup Pages
         uses: actions/configure-pages@v3
